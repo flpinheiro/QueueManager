@@ -45,5 +45,5 @@ jobs:
       if: success() || failure()    # run this step even if previous step failed
       with:
         name: DOTNET Tests                      # Name of the check run which will be created
-        path: test/UniTest/TestResults/*.trx    # Path to test results
+        path: test/UnitTest/TestResults/*.trx    # Path to test results
         reporter: dotnet-trx                    # Format of test results
