@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{03AA79D0-394A-475E-92EF-ED75DA25AA5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueManager.WebApi", "src\WebApi\QueueManager.WebApi.csproj", "{6EC9192A-9BE7-47A4-92EB-EFF980EF5B71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueManager.Domain", "src\Domain\QueueManager.Domain.csproj", "{A3C1DE3F-01EC-4511-8AD9-397A15779592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueManager.ApplicationCore", "src\ApplicationCore\QueueManager.ApplicationCore.csproj", "{9FB244E3-16F4-4628-B0AF-2C429461D0A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueManager.Infraestructure", "src\Infraestructure\QueueManager.Infraestructure.csproj", "{47D5EE72-E720-47D9-B780-458B0EDE8400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueManager.CrossCutting", "src\CrossCutting\QueueManager.CrossCutting.csproj", "{ACD5D5C3-842B-4189-96D2-5D92F62EAF3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4CF11202-DF04-4E93-956E-AD121B805FC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueManager.UnitTest", "test\UnitTest\QueueManager.UnitTest.csproj", "{BD33D5AB-9457-4C51-836D-CC97AD809D41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EC9192A-9BE7-47A4-92EB-EFF980EF5B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC9192A-9BE7-47A4-92EB-EFF980EF5B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC9192A-9BE7-47A4-92EB-EFF980EF5B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC9192A-9BE7-47A4-92EB-EFF980EF5B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C1DE3F-01EC-4511-8AD9-397A15779592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C1DE3F-01EC-4511-8AD9-397A15779592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C1DE3F-01EC-4511-8AD9-397A15779592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C1DE3F-01EC-4511-8AD9-397A15779592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FB244E3-16F4-4628-B0AF-2C429461D0A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB244E3-16F4-4628-B0AF-2C429461D0A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB244E3-16F4-4628-B0AF-2C429461D0A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB244E3-16F4-4628-B0AF-2C429461D0A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47D5EE72-E720-47D9-B780-458B0EDE8400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47D5EE72-E720-47D9-B780-458B0EDE8400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47D5EE72-E720-47D9-B780-458B0EDE8400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47D5EE72-E720-47D9-B780-458B0EDE8400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD5D5C3-842B-4189-96D2-5D92F62EAF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD5D5C3-842B-4189-96D2-5D92F62EAF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD5D5C3-842B-4189-96D2-5D92F62EAF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD5D5C3-842B-4189-96D2-5D92F62EAF3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD33D5AB-9457-4C51-836D-CC97AD809D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD33D5AB-9457-4C51-836D-CC97AD809D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD33D5AB-9457-4C51-836D-CC97AD809D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD33D5AB-9457-4C51-836D-CC97AD809D41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6EC9192A-9BE7-47A4-92EB-EFF980EF5B71} = {03AA79D0-394A-475E-92EF-ED75DA25AA5B}
+		{A3C1DE3F-01EC-4511-8AD9-397A15779592} = {03AA79D0-394A-475E-92EF-ED75DA25AA5B}
+		{9FB244E3-16F4-4628-B0AF-2C429461D0A8} = {03AA79D0-394A-475E-92EF-ED75DA25AA5B}
+		{47D5EE72-E720-47D9-B780-458B0EDE8400} = {03AA79D0-394A-475E-92EF-ED75DA25AA5B}
+		{ACD5D5C3-842B-4189-96D2-5D92F62EAF3F} = {03AA79D0-394A-475E-92EF-ED75DA25AA5B}
+		{BD33D5AB-9457-4C51-836D-CC97AD809D41} = {4CF11202-DF04-4E93-956E-AD121B805FC7}
+	EndGlobalSection
+EndGlobal
