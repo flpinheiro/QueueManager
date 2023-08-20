@@ -40,6 +40,11 @@ jobs:
     - name: Test
       run: dotnet test --verbosity normal --logger "trx;LogFileName=test-results.trx"
 
+    - name: add git credentials
+      run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"      
+
     - name: Test Report
       uses: dorny/test-reporter@v1
       if: success() || failure()    # run this step even if previous step failed
