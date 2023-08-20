@@ -33,5 +33,5 @@ jobs:
             context: .
             file: ./src/WebApi/Dockerfile
             push: true
-            tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKER_IMAGENAME }}:latest,${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKER_IMAGENAME }}:${{needs.versionize.outputs.version}}
+            tags: ${{ vars.DOCKERHUB_USERNAME }}/${{ vars.DOCKER_IMAGENAME }}:latest,${{ vars.DOCKERHUB_USERNAME }}/${{ vars.DOCKER_IMAGENAME }}:${{needs.versionize.outputs.version}}
         #   tags: username/imagename:version
