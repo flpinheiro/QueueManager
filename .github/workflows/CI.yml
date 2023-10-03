@@ -45,26 +45,12 @@ jobs:
     - name: Test
       run: dotnet test --verbosity normal --logger "trx;LogFileName=test-results.trx"
 
-    - name: Upload Test Results
-      uses: actions/upload-artifact@v2
-      if: success() || failure()
-      with:
-        name: test-results
-        path: test/UnitTest/TestResults/*.trx
-
-    # - name: Publish Test Results
-    #   uses: EnricoMi/publish-unit-test-result-action/composite@v2
-    #   if: always()
+    # - name: Upload Test Results
+    #   uses: actions/upload-artifact@v2
+    #   if: success() || failure()
     #   with:
-    #     files: test/UnitTest/TestResults/*.trx
-
-    # - name: Test Report
-    #   uses: dorny/test-reporter@v1
-    #   if: success() || failure()    # run this step even if previous step failed
-    #   with:
-    #     name: DOTNET Tests                      # Name of the check run which will be created
-    #     path: test/UnitTest/TestResults/*.trx    # Path to test results
-    #     reporter: dotnet-trx                    # Format of test results
+    #     name: test-results
+    #     path: test/UnitTest/TestResults/*.trx
 
     - name: Add dotnet tool
       run: dotnet tool install --global Versionize
@@ -79,40 +65,9 @@ jobs:
     - name: git push changelog
       run: git push --follow-tags
 
-  # versionize:
-  #   runs-on: ubuntu-latest
-  #   outputs:
-  #       version: ${{ steps.get-version.outputs.version }}
-  #   steps:
-  #   - uses: actions/checkout@v3
-  #     with: 
-  #       fetch-depth: 0
-
-  #   - name: Setup .NET
-  #     uses: actions/setup-dotnet@v3
-  #     with:
-  #       dotnet-version: 7.0.x
-
-  #   - name: add git credentials
-  #     run: |
-  #         git config --global user.name "github-actions[bot]"
-  #         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-  #   - name: dotnet tool restore
-  #     run: dotnet tool restore
-
-  #   - name: Versionize
-  #     run: dotnet tool run versionize
-  
-  #   - name: get-version
-  #     id: get-version
-  #     run: echo "version=$(dotnet tool run versionize inspect)" >> $GITHUB_OUTPUT
-  
-  #   - name: git push changelog
-  #     run: git push --follow-tags
-
   docker:
     runs-on: ubuntu-latest
+    needs: build
     steps:
     - name: Checkout
       uses: actions/checkout@v3
