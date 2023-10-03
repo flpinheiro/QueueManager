@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.0.6"></a>
+## [0.0.6](https://www.github.com/flpinheiro/QueueManager/releases/tag/v0.0.6) (2023-10-03)
+
 <a name="0.0.5"></a>
 ## [0.0.5](https://www.github.com/flpinheiro/QueueManager/releases/tag/v0.0.5) (2023-10-03)
 
